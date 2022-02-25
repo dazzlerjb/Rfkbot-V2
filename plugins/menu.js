@@ -8,7 +8,7 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┌────〔 %me 〕───⬣
+┌────〔WLS BOTZ〕───⬣
 │⬡ Hai, %name!
 │⬡ Tersisa *%limit Limit*
 │⬡ Role *%role*
@@ -220,7 +220,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `©AlyaaXzy`.trim(),
+                        "description": `©WlsBotz`.trim(),
                         "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
                         "buttonText": "*Click Here*",
                         "listType": "SINGLE_SELECT",
@@ -362,7 +362,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik AlyaaXzy",
+                                    "description": "pemilik DazzBotz",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
@@ -382,7 +382,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                         ], "contextInfo": 
 						{ "stanzaId": m.key.id,
                         "participant": "0@s.whatsapp.net",
-                        "remoteJid": "6283136505591-1614953337@g.us",
+                        "remoteJid": "6285772240572-1614953337@g.us",
                         "quotedMessage": m.message
 						}
                     }
